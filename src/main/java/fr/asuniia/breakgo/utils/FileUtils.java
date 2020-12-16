@@ -15,13 +15,6 @@ import java.util.zip.ZipInputStream;
 
 public class FileUtils {
 
-    /**
-     * Create file.
-     *
-     * @param file the file
-     * @return
-     * @throws IOException the io exception
-     */
     public static File createFile(File file) {
         if (!file.exists()) {
             file.getParentFile().mkdirs();
@@ -34,12 +27,6 @@ public class FileUtils {
         return file;
     }
 
-    /**
-     * Save.
-     *
-     * @param file the file
-     * @param txt  the txt
-     */
     public static void save(File file, String txt) {
         final FileWriter fw;
         createFile(file);
@@ -54,12 +41,6 @@ public class FileUtils {
         }
     }
 
-    /**
-     * Gets file content.
-     *
-     * @param file the file
-     * @return the file content
-     */
     public static String getFileContent(File file) {
         try {
             final BufferedReader reader = new BufferedReader(new FileReader(file));
