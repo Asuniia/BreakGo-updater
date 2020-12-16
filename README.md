@@ -17,6 +17,16 @@ $ git clone https://github.com/Asuniia/BreakGo-updater.git
 $ cd BreakGo-updater
 ```
 
+### Déployer les mise à jours
+
+Un hebergement web est requis.
+
+```sh
+Dans le ``/root`` de votre hebergement créez deux dossier se nommant ``[Nom_de_app_du_config.json]`` et de ``[Nom_de_app_du_config.json]_versions``.
+
+Mettez dans le dossier ``[Nom_de_app_du_config.json]`` un fichier qui s'appelle ``Versions.info`` et mettez dedans la version de l'application. *(ex: 0.3)*
+```
+
 
 ### Librairies utilisé
 
